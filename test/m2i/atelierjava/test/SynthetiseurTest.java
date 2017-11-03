@@ -20,6 +20,30 @@ import org.junit.Test;
 public class SynthetiseurTest {
  
 //    @Test
+    public void ajouterVolumeOK(){
+        Synthetiseur korg = new Synthetiseur();
+        System.out.println("***korg");
+        korg.allumageOnOff();
+        korg.ajouterVolume(2);
+        korg.ajouterVolume(2);
+        
+        Synthetiseur nord = new Synthetiseur();
+        System.out.println("***nord");
+        nord.allumageOnOff();
+        nord.ajouterVolume(1000);
+        
+    }
+//    @Test
+    public void volumeMoinsOK(){
+        Synthetiseur b = new Synthetiseur();
+        b.allumageOnOff();
+        b.volumeMoins();
+        b.volumeMoins();
+        b.volumeMoins();
+//        System.out.println(b.getVolume());
+        
+    }
+//    @Test
     public void alumageOnOffOK(){
         
         Synthetiseur yamaha = new Synthetiseur();
@@ -30,13 +54,14 @@ public class SynthetiseurTest {
         
     }
     
-//    @Test
+    @Test
     public void testJouerNoteOk(){
         Synthetiseur synth = new Synthetiseur();
-        
+        synth.allumageOnOff();
+        synth.jouerNote("do");
         
     }
-    @Test
+//    @Test
     public void testVolumePlusOk(){
         
         Synthetiseur s1 = new Synthetiseur();
