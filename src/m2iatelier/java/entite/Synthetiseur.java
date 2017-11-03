@@ -56,6 +56,7 @@ public class Synthetiseur {
         
         this.volume = quantiteDeVolume + this.volume;
         
+        
     }
     
     public void volumePlus(){
