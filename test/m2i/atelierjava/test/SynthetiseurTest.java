@@ -19,27 +19,41 @@ import org.junit.Test;
  */
 public class SynthetiseurTest {
  
-    
-    public void synthetiseurTest()throws MidiUnavailableException, InterruptedException{
+//    @Test
+    public void alumageOnOffOK(){
         
-        Synthetiseur s1 = new Synthetiseur()
-    }
-    
-    @Test
-    public void testJouerNoteOk(){
-        Synthesizer synth = new Synthetiseur();
+        Synthetiseur yamaha = new Synthetiseur();
         
-        synth
-    }
-    @Test
-    public void testVolumePlusOk(){
-        Synthetiseur s1 = new Synthetiseur();
-        System.out.println(s1.getVolume());
-        s1.volumePlus();
+        yamaha.allumageOnOff();
+        yamaha.allumageOnOff();
+        
+        
     }
     
 //    @Test
-    public void synthetiseurTest() throws MidiUnavailableException, InterruptedException{
+    public void testJouerNoteOk(){
+        Synthetiseur synth = new Synthetiseur();
+        
+        
+    }
+    @Test
+    public void testVolumePlusOk(){
+        
+        Synthetiseur s1 = new Synthetiseur();
+        s1.allumageOnOff();
+        s1.volumePlus();
+        s1.volumePlus();
+        s1.volumePlus();
+        s1.volumePlus();
+        s1.volumePlus();
+        s1.volumePlus();
+        s1.volumePlus();
+        s1.volumePlus();
+        System.out.println( s1.getVolume() );
+    }
+    
+//    @Test
+    public void b() throws MidiUnavailableException, InterruptedException{
         Synthesizer synth = MidiSystem.getSynthesizer();
         
         synth.open();

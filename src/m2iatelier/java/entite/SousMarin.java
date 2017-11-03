@@ -44,4 +44,4 @@ public class SousMarin extends Vehicule {
         super.reculer(); //To change body of generated methods, choose Tools | Templates.
     }
     
-    
+}

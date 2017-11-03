@@ -15,6 +15,8 @@ public class Synthetiseur {
     private String instrument;
     private int volume;
 
+    
+    
     public boolean isOn() {
         return on;
     }
@@ -28,32 +30,37 @@ public class Synthetiseur {
     }
 
     public void setInstrument(String instrument) {
+        
         this.instrument = instrument;
     }
 
     public int getVolume() {
-        return volume;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
+        return this.volume;
     }
     
     public void allumageOnOff(){
         if(this.on == true){
+            // il est allumé => on l'éteint
             this.on = false;
             System.out.println("Synthé éteint.");
         }else{
+            // éteint => on l'allume
             this.on = true;
             instrument = "Piano";
             volume = 5;
-            System.out.println("Synthé allumé. Instrument : " + this.instrument);
+            System.out.println("Synthé allumé. Instrument : " + this.instrument + ", volume " + this.volume);
         }
+    }
+    
+    public void ajouterVolume(int quantiteDeVolume){
+        
+        this.volume = quantiteDeVolume + this.volume;
+        
     }
     
     public void volumePlus(){
         if (this.volume < 10){
-            this.volume++;
+            this.volume = volume + 1;
         }else{
             System.out.println("Volume max atteint");
         }
