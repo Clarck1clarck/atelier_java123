@@ -6,6 +6,7 @@
 package m2i.atelierjava.test;
 
 import m2iatelier.java.entite.SousMarin;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -16,8 +17,10 @@ public class SousMarinTest {
     
     @Test
     public void sousMarinMonteTest(){
-        SousMarin s = new SousMarin(true, "JFK", true, "modele", "couleur", 0, 0, 0, 0, 12);
+        SousMarin s = new SousMarin(true, "JFK", true, "modele", "couleur", 0, 0, 0, 0, 10);
         s.avancer();
+        Assert.assertEquals(10, s.getZ());
+        Assert.assertEquals(10, s.getY());
         s.affichage();
         s.avancer();
         s.affichage();

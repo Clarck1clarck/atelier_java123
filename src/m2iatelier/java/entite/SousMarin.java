@@ -33,9 +33,9 @@ public class SousMarin extends Vehicule {
         super.avancer(); //To change body of generated methods, choose Tools | Templates.
         
         if(this.monte == true){
-            this.y = this.y +=pas;
+            this.y = this.y + this.pas;
         }else{
-            this.y = this.y -= pas;
+            this.y = this.y - this.pas;
         }
     }
 
@@ -43,8 +43,10 @@ public class SousMarin extends Vehicule {
     public void reculer() {
         super.reculer(); //To change body of generated methods, choose Tools | Templates.
         
-        if(this.monte == true){
-            
+        if(this.monte == false){
+            this.y = this.y - this.pas;
+        }else{
+            this.y = this.y + this.pas;
         }
     }
     
