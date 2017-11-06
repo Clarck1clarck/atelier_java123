@@ -6,24 +6,13 @@
 package m2i.atelierjava.test;
 
 import m2iatelier.java.entite.Avion;
-import m2iatelier.java.entite.SousMarin;
 import m2iatelier.java.entite.Vehicule;
-import org.junit.Test;
 
 /**
  *
  * @author Administrateur
  */
 public class VehiculeTest {
-    
-    @Test
-    public void sousMarinMonteTest(){
-        SousMarin s = new SousMarin(true, "JFK", true, "modele", "couleur", 0, 0, 0, 0, 12);
-        s.avancer();
-        s.affichage();
-        s.avancer();
-        s.affichage();
-    }
     
     
 //    @Test
@@ -38,6 +27,7 @@ public class VehiculeTest {
 //            System.out.println("Plus grand ou égal");
 //        }
 //    }
+    
 //    @Test
     public void testAvion(){
         
@@ -48,6 +38,7 @@ public class VehiculeTest {
         
         
     }
+    
 //    @Test
     public void testVehicule(){
         

@@ -42,6 +42,10 @@ public class SousMarin extends Vehicule {
     @Override
     public void reculer() {
         super.reculer(); //To change body of generated methods, choose Tools | Templates.
+        
+        if(this.monte == true){
+            
+        }
     }
     
 }

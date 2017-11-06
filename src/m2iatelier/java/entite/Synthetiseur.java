@@ -35,6 +35,9 @@ public class Synthetiseur {
     public int getVolume() {
         return this.volume;
     }
+    
+    
+    
 
     public void allumageOnOff() {
         if (this.on == true) {
